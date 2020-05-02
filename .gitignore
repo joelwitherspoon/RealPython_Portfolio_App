@@ -1,0 +1,7 @@
+# Default git ignore for django-project
+/.idea/*
+/.idea/
+.idea
+__pycache__
+/__pycache__
+/__pycache__/*
