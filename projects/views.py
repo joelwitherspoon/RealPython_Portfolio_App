@@ -9,4 +9,7 @@ def all_projects(request):
     context = {'projects': projects}
     return render(request, 'projects/all_projects.html', context)
 
-def project_detail(request,)
+def project_detail(request,pk):
+    p = Project.objects.get(pk=pk)
+    context = {'p': p}
+    return render(request, 'projects/project_detail.html', context)
